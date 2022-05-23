@@ -11,8 +11,6 @@ namespace matrix_rotation
       int inputArrayHeight = 7;
 
       int[,] inputArray = Write2DArray(inputArrayHeight, inputArrayWidth);
-
-      Print2DArray(inputArray, "Input");
       
       int rotationAmounts = rotations % 4;
       
@@ -36,7 +34,8 @@ namespace matrix_rotation
         Console.WriteLine("How?");
         break;
       }
-
+      
+      Print2DArray(inputArray, "Input");
       Print2DArray(outputArray, "Output");
     }
 
